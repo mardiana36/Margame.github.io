@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margame</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+
+<body>
+
+    <nav class="sectionNav">
+        <div class="containerNav">
+            <h1><a href="#sectionGame">Margame</a></h1>
+            <div class="divIcon">
+                <img class="iconProfile" src="aset/gambar/profile.png" alt="">
+                <div class="divProfile">
+                    <div>
+                        <h2>Profil Anda</h2>
+                        <p>Nama : <span class="userName"></span></p>
+                        <p>Score : <span class="scoreUser"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section1Warna" id="sectionGame">
+        <section class="section1">
+            <div class="container1">
+                <div class="content1">
+                    <div class="card1">
+                        <div class="divFoto">
+                            <img id="polisi" src="aset/gambar/polisi.png" alt="">
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+                            <img id="pencuri" src="aset/gambar/pencuri.png" alt="">
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="divFoto">
+                            <img class="gameOver" src="aset/gambar/bendera.png" alt="">
+                        </div>
+                        <div class="road">
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <img class="gifBulat" src="aset/video/animasiBulat.gif" alt="">
+                    <img class="gifBulat gifBulat2" src="aset/video/animasiBulat.gif" alt="">
+                    <div>
+                        <h3 class="question">Ayo Mulai Bermain!</h3>
+                    </div>
+                    <form class="formAnswer">
+                        <div class="formNama">
+                            <input id="nama" type="text" placeholder="Masukan nama anda..." required>
+                            <button type="button" class="Start labelAnswer">MULAI</button>
+                            <p class="help"><a href="#sectionHelp">Cara Main?</a></p>
+                        </div>
+                    </form>
+                    <div class="div3">
+                        <h1 class="textWon"></h1>
+                        <div class="divScoreNow">
+                            <h1 class="titleScore">xxx Score Anda xxx</h1>
+                            <h1 class="scoreNow">{ <span class="scoreUser"></span> }</h1>
+                        </div>
+                        <p>Ayo main lagi!</p>
+                        <div>
+                            <button id="repeat" type="button">OK</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <audio id="audio" src="aset/audio/audio1.mp3" loop></audio>
+    <audio id="audioWon" src="aset/audio/audioMenang.mp3"></audio>
+    <audio id="audioLost" src="aset/audio/audioKalah.mp3"></audio>
+    <button id="buttonAudio">&#9654;</button>
+
+    <section id="sectionHelp" class="section2">
+        <h1 class="titleSection">Cara Bermain</h1>
+        <div class="container2">
+            <div class="content">
+                <div class="divImg">
+                    <img src="aset/gambar/cara1.png" alt="">
+                </div>
+                <div class="divP">
+                    <p>1. Pertama Silhkan Masukan nama anda dan klik tombol MULAI untuk memulai permainan.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="divImg">
+                    <img src="aset/gambar/cara2.png" alt="">
+                </div>
+                <div class="divP">
+                    <p>2. Selanjutnya anda akan di arahkan kepermainan dimana anda bisa menjawab soal yang telah di
+                        berikan seperti gambar di atas. Selain itu, anda juga bisa melihat profil dan sekor anda saat
+                        ini. Dengan cara mengarahkan cursor anda ke icon profile di pojok kanan atas, seperti pada
+                        gambar.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="divImg">
+                    <img src="aset/gambar/cara3.png" alt="">
+                </div>
+                <div class="divP">
+                    <p>3. Ketika jawaban anda benar maka icon polisi akan maju satu langkah dan muncul keterangan
+                        "Mantap Jawaban Anda Benar!" serta anda akan mendapatkan sekor sebesar 25 setiap jawaban benar.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="divImg">
+                    <img src="aset/gambar/cara4.png" alt="">
+                </div>
+                <div class="divP">
+                    <p>4. Ketika jawaban anda salah maka icon pencuri akan akan maju satu langkah dan muncul keterangan
+                        "Yah Jawaban Anda Salah!" serta score anda akan dikurangi sebesar 30 setiap jawaban salah.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="divImg">
+                    <img src="aset/gambar/cara5.png" alt="">
+                </div>
+                <div class="divP">
+                    <p>5. Anda akan kalah ketika pencuri berhasil sampai ke bendera merah dan score terkecil yang bisa
+                        anda dapatkan yaitu -120.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="divImg">
+                    <img src="aset/gambar/cara6.png" alt="">
+                </div>
+                <div class="divP">
+                    <p>6. Anda akan menang ketika polisi berhasil sampai ke posisi pencuri seperti pada gambar dan score
+                        terbesar yang bisa anda dapatkan addalah 100.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sectionFooter">
+        <div class="divFooter">
+            <h3>&copy; 2023 Margame. Image by freepik.com</h3>
+        </div>
+    </footer>
+
+</body>
+
+</html>
